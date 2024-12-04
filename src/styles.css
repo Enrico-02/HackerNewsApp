@@ -1,0 +1,104 @@
+/* src/styles.css */
+
+/* Generale */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Container principale */
+#app {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Lista di notizie */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Data */
+span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Pulsante */
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #007BFF;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
